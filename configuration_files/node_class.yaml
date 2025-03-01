@@ -1,0 +1,12 @@
+apiVersion: eks.amazonaws.com/v1
+kind: NodeClass
+metadata:
+  name: default
+spec:
+  role: "AmazonEKSNodeRole"
+  subnetSelectorTerms:
+    - tags:
+        alpha.eksctl.io/cluster-name: "eks-test-cluster"
+  securityGroupSelectorTerms:
+    - tags:  
+        aws:eks:cluster-name: "eks-test-cluster"
