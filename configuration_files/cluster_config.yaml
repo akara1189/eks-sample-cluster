@@ -4,7 +4,7 @@ kind: ClusterConfig
 
 metadata:
   name: eks-test-cluster
-  region: us-east-1
+  region: us-west-2
 
 autoModeConfig:
   enabled: true

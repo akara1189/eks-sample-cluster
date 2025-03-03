@@ -48,3 +48,4 @@ aws eks update-kubeconfig --name eks-test-cluster #Just to make sure we're in th
 
 kubectl apply -f ./node_class.yaml
 kubectl apply -f ./node_pool.yaml
+kubectl apply -f sample_app/
