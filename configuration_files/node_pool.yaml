@@ -16,4 +16,4 @@ spec:
           values: ["t2.medium"]
         - key: "topology.kubernetes.io/zone"
           operator: In
-          values: ["us-east-1c", "us-east-1d"]
+          values: ["us-west-2a", "us-west-2b", "us-west-2c", "us-west-2d"]

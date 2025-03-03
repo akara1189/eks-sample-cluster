@@ -18,6 +18,8 @@ RUN curl -LO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksct
 
 COPY configuration_files/* /eks/
 
+COPY sample_app/* /eks/sample_app/
+
 COPY default.config /root/.aws/credentials
 
 #Not recommended for application containers but this is a tool container so it needs Shell access for scripts.
