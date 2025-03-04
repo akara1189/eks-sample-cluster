@@ -2,6 +2,8 @@ This repo contains a few scripts and some Kubernetes configuration files that ar
 
 Note that Auto-Mode offers "Karpenter as a service" and Karpenter itself runs off-cluster. This allows the automatic control of nodes before Karpenter is installed, preventing a "chicken or the egg" situation.
 
+YouTube follow along available here: https://youtu.be/TDgM3M9VHGI
+
 Contents:
 
 /configuration_files/ : Contains Kubernetes configuration files for eksctl (To create the actual cluster), a default Node Class to select basic information on where VMs should be spun up, a default Node Pool to spawn smaller nodes than the usual default Node Pools would (To keep testing cheap), an IAM trust policy to allow EKS to manage EC2 for you (Standard for any managed EKS nodes) and "test_script.sh" which is the container entrypoint and runs the container smoke testing as well as the cluster build.
